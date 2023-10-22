@@ -113,4 +113,4 @@ def registration():
         
         st.form_submit_button('Register')
         
-registration()
+#registration()

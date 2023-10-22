@@ -65,6 +65,5 @@ class multiapp:
             register.registration()
        
 
-if __name__=="__main__":
-    multiapp.run()
+        run()
     

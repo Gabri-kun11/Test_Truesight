@@ -1,0 +1,10 @@
+deta
+google_api_python_client
+Pillow
+Pillow
+PyDrive
+pydub
+streamlit
+streamlit_authenticator
+streamlit_option_menu
+streamlit_webrtc

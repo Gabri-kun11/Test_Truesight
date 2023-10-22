@@ -4,10 +4,10 @@ from PIL import Image
 import register, login, home
 
 #Icon Image
-icon = Image.open("Picture/TrueSight_Logo_nobg.png")
+
 st.set_page_config(
     
-    page_icon= icon, 
+    page_icon= "👁", 
     page_title= 'TrueSight'
     
 )

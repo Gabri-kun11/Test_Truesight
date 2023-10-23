@@ -185,8 +185,8 @@ def SignIn():
                         selection = option_menu(
                         #menu_title="Dashboard",
                         menu_title=(f"{username}"),
-                        options=["Video Stream", "Evidence", "Log out"],
-                        icons=["camera-video", "person-bounding-box", "bell", "box-arrow-left"],
+                        options=["Evidence", "Log out"],
+                        icons=["person-bounding-box", "bell", "box-arrow-left"],
                         #menu_icon="menu-button-fill",
                         menu_icon = "person-square",
                         default_index=0,
@@ -208,7 +208,7 @@ def SignIn():
                     new_additional_student_detections = len(additional_image_files) - previous_additional_student_count
                     new_sound_detections = len(sound_image_files) - previous_sound_detections_count
 
-                    Alert System Sound
+                    #Alert System Sound
                     if new_head_motion_detections > 0:
                         #audio = AudioSegment.from_file("Alert/Alert.wav")
                         #play(audio)
@@ -251,13 +251,13 @@ def SignIn():
                     st.session_state["previous_additional_student_count"] = previous_additional_student_count
                     st.session_state["previous_sound_detections_count"] = previous_sound_detections_count
 
-                    if selection == "Video Stream":
-                        st.header("Real-time Video Stream")
-                        st.markdown("---")
+                    # if selection == "Video Stream":
+                    #     st.header("Real-time Video Stream")
+                    #     st.markdown("---")
 
-                        if st.button("Open VideoStream"):
-                            subprocess.Popen(["streamlit", "run", "videostream.py"])
-                            st.markdown("---")
+                    #     if st.button("Open VideoStream"):
+                    #         subprocess.Popen(["streamlit", "run", "videostream.py"])
+                    #         st.markdown("---")
 
                     if selection == "Evidence":
                         st.header("Evidence")

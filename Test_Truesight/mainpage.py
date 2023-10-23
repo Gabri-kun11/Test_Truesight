@@ -1,9 +1,10 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+#from PIL import Image
 import register, login, home
 
 #Icon Image
-
+#icon = Image.open("Picture/TrueSight_Logo_nobg.png")
 st.set_page_config(
     
     page_icon= "👁", 
@@ -64,5 +65,6 @@ class multiapp:
             register.registration()
        
 
-    run()
+if __name__=="__main__":
+    multiapp.run()
     

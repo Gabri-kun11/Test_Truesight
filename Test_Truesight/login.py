@@ -426,4 +426,5 @@ def SignIn():
                 st.warning('Username does not exist, Please Sign up')
     except:
         pass
-    
+
+SignIn()

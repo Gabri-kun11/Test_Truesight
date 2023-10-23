@@ -64,5 +64,5 @@ class multiapp:
             register.registration()
        
 
-        run()
+    run()
     

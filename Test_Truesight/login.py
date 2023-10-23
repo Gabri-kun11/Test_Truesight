@@ -8,8 +8,8 @@ import subprocess
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import datetime
-from pydub.playback import play
-from pydub import AudioSegment
+#from pydub.playback import play
+#from pydub import AudioSegment
 from datetime import timedelta
 from googleapiclient.errors import HttpError
 
@@ -209,35 +209,35 @@ def SignIn():
                     new_sound_detections = len(sound_image_files) - previous_sound_detections_count
 
                     #Alert System Sound
-                    if new_head_motion_detections > 0:
-                        audio = AudioSegment.from_file("Alert/Alert.wav")
-                        play(audio)
-                        st.error(
-                            f"New Head Motion Cheating Detected! ({new_head_motion_detections} new detections) Check the evidence dashboard for more information.")
+                    # if new_head_motion_detections > 0:
+                    #     audio = AudioSegment.from_file("Alert/Alert.wav")
+                    #     play(audio)
+                    #     st.error(
+                    #         f"New Head Motion Cheating Detected! ({new_head_motion_detections} new detections) Check the evidence dashboard for more information.")
 
-                    if new_hand_gesture_detections > 0:
-                        audio = AudioSegment.from_file("Alert/Alert1.wav")
-                        play(audio)
-                        st.error(
-                            f"New Hand Gesture Cheating Detected! ({new_hand_gesture_detections} new detections) Check the evidence dashboard for more information.")
+                    # if new_hand_gesture_detections > 0:
+                    #     audio = AudioSegment.from_file("Alert/Alert1.wav")
+                    #     play(audio)
+                    #     st.error(
+                    #         f"New Hand Gesture Cheating Detected! ({new_hand_gesture_detections} new detections) Check the evidence dashboard for more information.")
 
-                    if new_posture_detections > 0:
-                        audio = AudioSegment.from_file("Alert/Alert2.wav")
-                        play(audio)
-                        st.error(
-                            f"New Student Not Detected! ({new_posture_detections} new detections) Check the evidence dashboard for more information.")
+                    # if new_posture_detections > 0:
+                    #     audio = AudioSegment.from_file("Alert/Alert2.wav")
+                    #     play(audio)
+                    #     st.error(
+                    #         f"New Student Not Detected! ({new_posture_detections} new detections) Check the evidence dashboard for more information.")
 
-                    if new_additional_student_detections > 0:
-                        audio = AudioSegment.from_file("Alert/Alert3.wav")
-                        play(audio)
-                        st.error(
-                            f"New Additional student Detected! ({new_additional_student_detections} new detections) Check the evidence dashboard for more information.")
+                    # if new_additional_student_detections > 0:
+                    #     audio = AudioSegment.from_file("Alert/Alert3.wav")
+                    #     play(audio)
+                    #     st.error(
+                    #         f"New Additional student Detected! ({new_additional_student_detections} new detections) Check the evidence dashboard for more information.")
 
-                    if new_sound_detections > 0:
-                        audio = AudioSegment.from_file("Alert/Alert4.wav")
-                        play(audio)
-                        st.error(
-                            f"New Sound Cheating Detected! ({new_sound_detections} new detections) Check the evidence dashboard for more information.")
+                    # if new_sound_detections > 0:
+                    #     audio = AudioSegment.from_file("Alert/Alert4.wav")
+                    #     play(audio)
+                    #     st.error(
+                    #         f"New Sound Cheating Detected! ({new_sound_detections} new detections) Check the evidence dashboard for more information.")
 
                     previous_head_motion_count = len(head_image_files)
                     previous_hand_gesture_count = len(hand_image_files)
